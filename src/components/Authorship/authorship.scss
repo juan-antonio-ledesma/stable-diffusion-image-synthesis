@@ -1,0 +1,14 @@
+@use '../../assets/stylesheets/globals/variables' as *;
+
+.authorship {
+  color: $grey-600;
+  &-author {
+    font-weight: 600;
+    color: $grey-600;
+    transition: $transition-fast color;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

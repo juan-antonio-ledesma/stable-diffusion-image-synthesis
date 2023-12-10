@@ -1,0 +1,25 @@
+@use '../../assets/stylesheets/globals/variables' as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 29rem;
+  margin: 0 auto;
+
+  .authorship {
+    margin-top: auto;
+  }
+
+  @media screen and (min-width: $md) {
+    max-width: 56rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+}

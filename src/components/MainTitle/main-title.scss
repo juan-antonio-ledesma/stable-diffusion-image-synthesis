@@ -1,0 +1,17 @@
+@use '../../assets/stylesheets/globals/variables' as *;
+
+.mainTitle {
+  font-family: $ff-poppins;
+  font-size: clamp(3.125rem, 4vw + 1rem, 4.375rem);
+  line-height: 1.1;
+  font-weight: 700;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 5.5rem;
+    height: 0.75rem;
+    background-color: $black;
+    margin-top: 1.5rem;
+  }
+}
