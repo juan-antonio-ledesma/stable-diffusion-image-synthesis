@@ -17,7 +17,14 @@ export default function ImageCard({
 }: Props) {
   return (
     <div className="imageCard">
-      <img src={imageSrc} alt={title} className="imageCard-image" />
+      <div className="imageCard-imageWrapper">
+        <img
+          src={imageSrc}
+          alt={title}
+          className="imageCard-image"
+          loading="lazy"
+        />
+      </div>
       <div className="imageCard-content">
         <h2 className="imageCard-title">{title}</h2>
         <h3 className="imageCard-subitle">Model</h3>

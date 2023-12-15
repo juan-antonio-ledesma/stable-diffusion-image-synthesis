@@ -10,9 +10,17 @@
   box-shadow: 0 0.75rem 1.5rem -0.25rem rgba(145, 158, 171, 0.12),
     0 0 0.125rem 0 rgba(145, 158, 171, 0.2);
 
+  &-imageWrapper {
+    background-color: rgba($grey-500, 0.12);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+
   &-image {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 
   &-content {
