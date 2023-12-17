@@ -23,6 +23,8 @@ export default function ImageCard({
           alt={title}
           className="imageCard-image"
           loading="lazy"
+          width="800"
+          height="800"
         />
       </div>
       <div className="imageCard-content">
