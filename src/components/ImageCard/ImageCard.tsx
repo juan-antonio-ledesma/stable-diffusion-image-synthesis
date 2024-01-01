@@ -18,14 +18,18 @@ export default function ImageCard({
   return (
     <div className="imageCard">
       <div className="imageCard-imageWrapper">
-        <img
-          src={imageSrc}
-          alt={title}
-          className="imageCard-image"
-          loading="lazy"
-          width="800"
-          height="800"
-        />
+        <picture>
+          <source srcSet={`${imageSrc}.avif`} type="image/avif" />
+          <source srcSet={`${imageSrc}.jpg`} type="image/jpeg" />
+          <img
+            src={`${imageSrc}.jpg`}
+            alt={title}
+            className="imageCard-image"
+            loading="lazy"
+            width="800"
+            height="800"
+          />
+        </picture>
       </div>
       <div className="imageCard-content">
         <h2 className="imageCard-title">{title}</h2>

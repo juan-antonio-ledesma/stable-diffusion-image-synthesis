@@ -1,5 +1,5 @@
 const sumoWrestler = {
-  imageSrc: './images/sumo-wrestler.jpg',
+  imageSrc: './images/sumo-wrestler',
   title: 'Sumo Wrestler',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -9,7 +9,7 @@ const sumoWrestler = {
 }
 
 const whiteHorse = {
-  imageSrc: './images/white-horse.jpg',
+  imageSrc: './images/white-horse',
   title: 'White Horse',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt: 'A white horse galloping on the coast, anime style',
@@ -18,7 +18,7 @@ const whiteHorse = {
 }
 
 const towardsTheBurningCastle = {
-  imageSrc: './images/towards-the-burning-castle.jpg',
+  imageSrc: './images/towards-the-burning-castle',
   title: 'Towards the Burning Castle',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt: 'Knight toward a burning castle, dark cyberpunk style',
@@ -27,7 +27,7 @@ const towardsTheBurningCastle = {
 }
 
 const portraitOfARhinoceros = {
-  imageSrc: './images/portrait-of-a-rhinoceros.jpg',
+  imageSrc: './images/portrait-of-a-rhinoceros',
   title: 'Portrait of a Rhinoceros',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -35,7 +35,7 @@ const portraitOfARhinoceros = {
 }
 
 const conversationAtTheBar = {
-  imageSrc: './images/conversation-at-the-bar.jpg',
+  imageSrc: './images/conversation-at-the-bar',
   title: 'Conversation at the Bar',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -44,7 +44,7 @@ const conversationAtTheBar = {
 }
 
 const eruptingVolcano = {
-  imageSrc: './images/erupting-volcano.jpg',
+  imageSrc: './images/erupting-volcano',
   title: 'Erupting Volcano',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -53,7 +53,7 @@ const eruptingVolcano = {
 }
 
 const greenDemon = {
-  imageSrc: './images/green-demon.jpg',
+  imageSrc: './images/green-demon',
   title: 'Green Demon',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -62,7 +62,7 @@ const greenDemon = {
 }
 
 const desertAtNight = {
-  imageSrc: './images/desert-at-night.jpg',
+  imageSrc: './images/desert-at-night',
   title: 'Desert at Night',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -71,7 +71,7 @@ const desertAtNight = {
 }
 
 const aloneInTheDark = {
-  imageSrc: './images/alone-in-the-dark.jpg',
+  imageSrc: './images/alone-in-the-dark',
   title: 'Alone in the Dark',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -79,7 +79,7 @@ const aloneInTheDark = {
 }
 
 const returningToTheTown = {
-  imageSrc: './images/returning-to-the-town.jpg',
+  imageSrc: './images/returning-to-the-town',
   title: 'Returning to the Town',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -89,7 +89,7 @@ const returningToTheTown = {
 }
 
 const phoenixBird = {
-  imageSrc: './images/phoenix-bird.jpg',
+  imageSrc: './images/phoenix-bird',
   title: 'Phoenix bird',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
@@ -98,7 +98,7 @@ const phoenixBird = {
 }
 
 const donaldTrumpFighter = {
-  imageSrc: './images/donald-trump-fighter.jpg',
+  imageSrc: './images/donald-trump-fighter',
   title: 'Donal Trump Fighter',
   model: 'Stable Diffussion XL 1.0',
   positivePrompt:
