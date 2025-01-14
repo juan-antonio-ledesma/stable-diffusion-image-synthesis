@@ -1,0 +1,40 @@
+@use '../globals/settings' as *;
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-primary;
+  color: $neutral-50;
+}
+
+::selection {
+  background-color: $neutral-50;
+  color: $background-primary;
+}
+
+a,
+button {
+  &:focus-visible {
+    outline: 0.125rem solid $neutral-50;
+    outline-offset: 0.25rem;
+  }
+}
+
+button {
+  font-family: $ff-inter;
+}
+
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  margin: -0.0625rem;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

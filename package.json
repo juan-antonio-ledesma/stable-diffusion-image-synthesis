@@ -21,6 +21,6 @@
   "devDependencies": {
     "cssnano": "^6.0.1",
     "postcss-sort-media-queries": "^5.2.0",
-    "sass": "^1.69.5"
+    "sass": "^1.83.4"
   }
 }

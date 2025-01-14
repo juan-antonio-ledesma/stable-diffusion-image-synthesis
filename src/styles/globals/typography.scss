@@ -1,0 +1,104 @@
+@use 'sass:map';
+
+$font-sizes: (
+  'text-xs': 0.75rem,
+  // 12px
+  'text-sm': 0.875rem,
+  // 14px
+  'text-base': 1rem,
+  // 16px
+  'text-lg': 1.125rem,
+  // 18px
+  'text-xl': 1.5rem,
+  // 24px
+  'text-2xl': 1.875rem,
+  // 30px
+  'text-3xl': 2.25rem,
+  // 36px
+  'text-4xl': 3rem,
+  // 48px
+  'text-5xl': 3.75rem,
+  // 60px
+  'text-6xl': 4.5rem,
+  // 72px
+  'text-7xl': 6rem,
+  // 96px
+  'text-8xl': 8rem,
+  // 128px
+);
+
+$line-height-ratios: (
+  'text-xs': 1.33,
+  // 16px / 12px
+  'text-sm': 1.42,
+  // 20px / 14px
+  'text-base': 1.5,
+  // 24px / 16px
+  'text-lg': 1.55,
+  // 28px / 18px
+  'text-xl': 1.33,
+  // 32px / 24px
+  'text-2xl': 1.2,
+  // 36px / 30px
+  'text-3xl': 1.11,
+  // 40px / 36px
+  'text-4xl': 1.1,
+  // 52.8px / 48px
+  'text-5xl': 1.1,
+  // 66px / 60px
+  'text-6xl': 1.1,
+  // 79.2px / 72px
+  'text-7xl': 1.1,
+  // 105.6px / 96px
+  'text-8xl': 1.1,
+  // 140.8px / 128px
+);
+
+// letter-spacing (px) = (font-size in px) × (letter-spacing in % / 100)
+$letter-spacings: (
+  'text-4xl': -0.045rem,
+  // 48px × (-1.5% / 100) = -0.72px
+  'text-5xl': -0.0825rem,
+  // 60px × (-2.2% / 100) = -1.32px
+  'text-6xl': -0.0988rem,
+  // 72px × (-2.2% / 100) = -1.58px
+  'text-7xl': -0.18rem,
+  // 96px × (-3% / 100) = -2.88px
+  'text-8xl': -0.32rem,
+  // 128px × (-4% / 100) = -5.12px
+);
+
+// Dynamic mixin to apply text and paragraph styles
+@mixin apply-text-style(
+  $size,
+  $font-weight: null,
+  $text-decoration: null,
+  $text-transform: null
+) {
+  $font-size: map.get($font-sizes, $size);
+  $line-height-ratio: map.get($line-height-ratios, $size);
+
+  font-size: $font-size;
+  line-height: $line-height-ratio;
+
+  // Apply letter-spacing only if it exists in the map
+  $letter-spacing: map.get($letter-spacings, $size);
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+
+  // Apply font-weight only if it is provided
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+
+  // Apply text-decoration only if it is provided
+  @if $text-decoration {
+    text-decoration: $text-decoration;
+  }
+
+  // Apply text-transform only if it is provided
+  @if $text-transform {
+    text-transform: $text-transform;
+  }
+}

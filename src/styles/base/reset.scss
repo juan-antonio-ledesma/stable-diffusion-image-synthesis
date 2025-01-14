@@ -17,7 +17,22 @@ p {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
 button {
   border: none;
   cursor: pointer;
+  user-select: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
 }

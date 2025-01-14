@@ -1,0 +1,28 @@
+// Colors
+@forward './colors';
+
+// Fonts
+@forward './fonts';
+
+// Typography
+@forward './typography';
+
+// Font families
+$ff-inter: 'Inter', sans-serif;
+
+// Shadows
+@forward './shadows';
+
+// Border radius
+@forward './border-radius';
+
+// Transitions
+$transition-fast: 200ms ease;
+
+// Content max width
+$content-max-width: 53rem; // 848
+
+// Media queries
+$sm: 28rem; // 448px
+$md: 43.75rem; // 700
+$lg: 53rem; // 848

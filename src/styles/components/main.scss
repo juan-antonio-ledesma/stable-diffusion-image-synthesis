@@ -1,17 +1,13 @@
-@use '../../assets/stylesheets/globals/variables' as *;
+@use '../globals/settings' as *;
 
 .main {
-  padding: 2rem;
+  padding: 2rem 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0 auto;
 
   @media screen and (min-width: $md) {
     grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (min-width: $lg) {
-    margin: 0 0 0 auto;
   }
 }

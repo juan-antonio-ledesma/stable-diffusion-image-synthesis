@@ -1,0 +1,54 @@
+@use '../globals/settings' as *;
+
+.imageCard {
+  width: 100%;
+  max-width: 25rem;
+  height: fit-content;
+  overflow: hidden;
+  background-color: $background-secondary;
+  border: solid 0.0625rem $neutral-800;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+
+  &-imageWrapper {
+    background-color: $background-secondary;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  &-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &-content {
+    padding: 1rem 1rem 1.25rem;
+  }
+
+  &-title {
+    @include apply-text-style('text-md', 600);
+  }
+
+  &-subitle {
+    @include apply-text-style('text-sm', 500);
+    margin: 1.25rem 0 0.25rem;
+  }
+
+  &-paragraph {
+    color: $neutral-400;
+    @include apply-text-style('text-sm');
+  }
+
+  &-paragraph.is-copyText {
+    position: relative;
+    padding-right: 3rem;
+    min-height: 2rem;
+  }
+
+  .copyTextButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

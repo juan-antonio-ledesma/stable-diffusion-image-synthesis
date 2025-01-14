@@ -1,5 +1,7 @@
 ---
-import Home from '../layouts/Home/Home'
+import Home from '@layouts/Home'
+
+import '@styles/styles.scss'
 ---
 
 <html lang="en">
@@ -8,7 +10,10 @@ import Home from '../layouts/Home/Home'
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <title>Stable Diffusion · Image Synthesis</title>
-    <meta name="description" content="Collection of images generated through Stable Diffusion">
+    <meta
+      name="description"
+      content="Collection of images generated through Stable Diffusion"
+    />
   </head>
   <body>
     <Home client:only="react" />

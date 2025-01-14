@@ -1,0 +1,36 @@
+@use '../globals/settings' as *;
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  height: 2rem;
+  padding-inline: 0.75rem;
+  display: flex;
+  align-items: center;
+  @include apply-text-style('text-sm', 500);
+  background-color: $neutral-950;
+  color: $neutral-50;
+  border: solid 0.0625rem $neutral-800;
+  box-shadow: $shadow-sm;
+  border-radius: $border-radius-md;
+  cursor: initial;
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition-fast opacity;
+
+  &.is-right {
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(100% + 0.25rem);
+  }
+
+  &.is-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.is-hiding {
+    opacity: 0;
+    visibility: visible;
+  }
+}

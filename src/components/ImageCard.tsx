@@ -1,4 +1,4 @@
-import CopyTextButton from '../CopyTextButton/CopyTextButton'
+import CopyTextButton from './CopyTextButton'
 
 type Props = {
   imageSrc: string
@@ -14,7 +14,7 @@ export default function ImageCard({
   model,
   positivePrompt,
   negativePrompt,
-}: Props) {
+}: Readonly<Props>) {
   return (
     <div className="imageCard">
       <div className="imageCard-imageWrapper">

@@ -1,0 +1,29 @@
+@use '../globals/settings' as *;
+
+.copyTextButton {
+  background-color: transparent;
+  color: $neutral-50;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border-radius: $border-radius-md;
+  border: solid 0.0625rem $neutral-800;
+  transition: background-color $transition-fast;
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $neutral-800;
+    }
+  }
+
+  &:active {
+    background-color: $neutral-800;
+  }
+}

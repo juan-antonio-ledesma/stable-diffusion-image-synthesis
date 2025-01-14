@@ -1,10 +1,11 @@
-<svg
-  width="332"
-  height="332"
-  viewBox="0 0 332 332"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <rect width="332" height="332" fill="white" />
-  <circle cx="166" cy="166" r="106" fill="black" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="40" ry="40" fill="#0a0a0a" />
+  <path
+    d="m104.45,51.09h-24.45l27.69,28.97-27.69,28.85h24.45l27.55-28.85-27.55-28.97Z"
+    fill="#fafafa"
+  />
+  <path
+    d="m28,80.06l27.55,28.85h24.45s-27.69-28.85-27.69-28.85l27.69-28.97h-24.45s-27.55,28.97-27.55,28.97Z"
+    fill="#fafafa"
+  />
 </svg>
