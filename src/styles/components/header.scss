@@ -8,18 +8,19 @@
     max-width: 27rem;
     margin-inline: auto;
     padding: 2rem 1rem;
+    text-align: center;
 
-    @media screen and (min-width: $md) {
+    @media screen and (width >= $md) {
       max-width: $content-max-width;
     }
   }
 
   &-title {
-    @include apply-text-style('text-2xl', 700);
+    @include apply-text-style('text-3xl', 700);
     margin-bottom: 1rem;
 
-    @media screen and (min-width: $md) {
-      @include apply-text-style('text-3xl', 700);
+    @media screen and (width >= $md) {
+      @include apply-text-style('text-4xl', 700);
     }
   }
 
