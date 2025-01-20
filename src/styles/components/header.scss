@@ -15,11 +15,15 @@
   }
 
   &-title {
-    @include apply-text-style('text-3xl', 700);
+    @include apply-text-style('text-2xl', 700);
     margin-bottom: 1rem;
+
+    @media screen and (min-width: $md) {
+      @include apply-text-style('text-3xl', 700);
+    }
   }
 
   &-subtitle {
-    @include apply-text-style('text-lg', 400);
+    @include apply-text-style('text-md', 400);
   }
 }
