@@ -5,9 +5,13 @@
 
   &-innerWrapper {
     width: 100%;
-    max-width: $content-max-width;
+    max-width: 27rem;
     margin-inline: auto;
     padding: 2rem 1rem;
+
+    @media screen and (min-width: $md) {
+      max-width: $content-max-width;
+    }
   }
 
   &-title {
