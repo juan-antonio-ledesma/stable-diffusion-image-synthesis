@@ -1,0 +1,21 @@
+@use '../globals/settings' as *;
+
+.header {
+  width: 100%;
+
+  &-innerWrapper {
+    width: 100%;
+    max-width: $content-max-width;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+  }
+
+  &-title {
+    @include apply-text-style('text-3xl', 700);
+    margin-bottom: 1rem;
+  }
+
+  &-subtitle {
+    @include apply-text-style('text-lg', 400);
+  }
+}
