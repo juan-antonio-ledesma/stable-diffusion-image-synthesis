@@ -1,5 +1,6 @@
 @use '../globals/settings' as *;
 
+.buttonIcon,
 .linkIcon {
   display: grid;
   place-items: center;
@@ -9,6 +10,22 @@
   .icon {
     width: 1rem;
     height: 1rem;
+  }
+
+  &.is-secondary {
+    background-color: $background-secondary;
+    border: solid 0.0625rem $neutral-800;
+    color: $neutral-50;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $neutral-800;
+      }
+    }
+
+    &:active {
+      background-color: $neutral-800;
+    }
   }
 
   &.is-ghost {

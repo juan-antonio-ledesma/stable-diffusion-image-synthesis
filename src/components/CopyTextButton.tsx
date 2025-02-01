@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import ButtonIcon from './ButtonIcon'
 import Tooltip from './Tooltip'
 
 import IconCopy from '@icons/IconCopy'
@@ -18,13 +19,13 @@ export default function CopyTextButton({ text }: Readonly<Props>) {
   }
 
   return (
-    <button
-      className="copyTextButton"
-      aria-label="Copy text"
+    <ButtonIcon
+      ariaLabel="Copy text"
       onClick={handleCopyText}
+      icon={<IconCopy />}
+      type="secondary"
     >
-      <IconCopy />
       <Tooltip text="Copied!" isVisible={isVisibleTooltip} />
-    </button>
+    </ButtonIcon>
   )
 }
