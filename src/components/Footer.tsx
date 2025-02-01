@@ -1,6 +1,6 @@
 import LinkIcon from './LinkIcon'
 
-import IconGitHub2 from '@icons/IconGitHub2'
+import IconGitHub from '@icons/IconGitHub'
 import IconLinkedIn from '@icons/IconLinkedIn'
 
 const currentYear = new Date().getFullYear()
@@ -20,7 +20,7 @@ export default function Header() {
             href="https://github.com/juan-antonio-ledesma"
             ariaLabel="GitHub"
             blank
-            icon={<IconGitHub2 />}
+            icon={<IconGitHub />}
           />
           <LinkIcon
             type="ghost"
