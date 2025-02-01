@@ -2,6 +2,7 @@ import { useMediaQuery } from 'react-responsive'
 
 import Header from '@components/Header'
 import Main from '@components/Main'
+import Footer from '@components/Footer'
 import MainColumn from '@components/MainColumn'
 import ImageCard from '@components/ImageCard'
 
@@ -74,6 +75,7 @@ export default function Home() {
           </>
         )}
       </Main>
+      <Footer />
     </>
   )
 }

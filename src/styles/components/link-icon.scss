@@ -1,0 +1,33 @@
+@use '../globals/settings' as *;
+
+.linkIcon {
+  display: grid;
+  place-items: center;
+  border-radius: $border-radius-md;
+  transition: background-color $transition-fast;
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &.is-ghost {
+    background-color: transparent;
+    color: $neutral-50;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $neutral-800;
+      }
+    }
+
+    &:active {
+      background-color: $neutral-800;
+    }
+  }
+
+  &.is-sm {
+    width: 2rem;
+    height: 2rem;
+  }
+}
